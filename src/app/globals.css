@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 36 50% 90%; /* Soft Beige #F2E7D8 */
+    --foreground: 16 25% 29%; /* Dark Brown #5D4037 */
+    --card: 36 50% 90%;
+    --card-foreground: 16 25% 29%;
+    --popover: 36 50% 90%;
+    --popover-foreground: 16 25% 29%;
+    --primary: 30 52% 65%; /* Warm Gold #D4A276 */
+    --primary-foreground: 25 33% 20%; /* Very Dark Brown */
+    --secondary: 36 46% 77%; /* Muted Gold #E0C9A6 */
+    --secondary-foreground: 16 25% 29%;
+    --muted: 36 50% 85%; /* Slightly darker Beige */
+    --muted-foreground: 25 33% 55%; /* Lighter Brown for muted text */
+    --accent: 25 33% 47%; /* Deep Brown #8C6349 */
+    --accent-foreground: 36 50% 90%; /* Soft Beige for text on accent */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 28 27% 67%; /* Subtle Brown #C1A995 */
+    --input: 28 27% 67%;
+    --ring: 30 52% 65%; /* Primary Gold */
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+
+    /* Sidebar variables to match the theme */
+    --sidebar-background: 36 50% 88%; /* Slightly darker beige */
+    --sidebar-foreground: 16 25% 29%;
+    --sidebar-primary: 30 52% 65%;
+    --sidebar-primary-foreground: 25 33% 20%;
+    --sidebar-accent: 25 33% 47%;
+    --sidebar-accent-foreground: 36 50% 90%;
+    --sidebar-border: 28 27% 67%;
+    --sidebar-ring: 30 52% 65%;
+  }
+
+  .dark {
+    --background: 15 20% 15%; /* Very Dark Brown #2F2522 */
+    --foreground: 36 50% 85%; /* Off-white/Light Beige #EAE0D5 */
+    --card: 15 20% 20%; /* Slightly Lighter Dark Brown #3A2D2A */
+    --card-foreground: 36 50% 85%;
+    --popover: 15 20% 20%;
+    --popover-foreground: 36 50% 85%;
+    --primary: 30 52% 65%; /* Warm Gold #D4A276 */
+    --primary-foreground: 15 20% 10%; /* Almost Black */
+    --secondary: 25 30% 30%; /* Dark Muted Brown #5A4943 */
+    --secondary-foreground: 36 50% 85%;
+    --muted: 15 20% 25%; /* Darker Muted Brown #473B37 */
+    --muted-foreground: 30 40% 60%; /* Muted Gold/Beige text #B3A28C */
+    --accent: 30 45% 55%; /* Lighter Gold/Brown #B38F6B */
+    --accent-foreground: 15 20% 10%; /* Almost Black */
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 25 25% 35%; /* Darker subtle brown #6B5B54 */
+    --input: 25 25% 35%;
+    --ring: 30 52% 65%; /* Primary Gold */
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+
+    /* Dark Sidebar variables */
+    --sidebar-background: 15 20% 18%; /* Darker version of card */
+    --sidebar-foreground: 36 50% 85%;
+    --sidebar-primary: 30 52% 65%;
+    --sidebar-primary-foreground: 15 20% 10%;
+    --sidebar-accent: 30 45% 55%;
+    --sidebar-accent-foreground: 15 20% 10%;
+    --sidebar-border: 25 25% 35%;
+    --sidebar-ring: 30 52% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
